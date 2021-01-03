@@ -40,6 +40,39 @@ public class petlafor {
                }
             System.out.println();
         }
+        System.out.println();
+        System.out.println("----------------------Zadanie 5 ----------------------");
+        System.out.println();
+
+        // wyświetlanie nieposortowanej
+        int [] sort = {3,1,-5,20,-6,-18,100};
+        for(int i = 0; i< sort.length; i++) {
+            System.out.print(sort[i] + ", ");
+        }
+        System.out.println();
+//  sortowanie
+        for(int j = 0; j< sort.length; j++) {
+            for (int i = 0; i < sort.length - 1; i++) {
+                if (sort[i + 1] < sort[i]) {
+                    int tmp = sort[i + 1];
+                    sort[i + 1] = sort[i];
+                    sort[i] = tmp;
+                }
+
+            }
+        }
+        System.out.println();
+
+
+// wyświetlanie posortowanej
+                for(int i = 0; i< sort.length; i++){
+                    System.out.print(sort[i] + ", ");
+                }
+        System.out.println();
+
+
+
+
 
     }
 
