@@ -101,6 +101,78 @@ public class petlafor {
                     b++;}
             }
         System.out.println("tablica zawiera "+a+" liter/y 'a' i "+ b+ " liter/y 'A'");
+
+
+        System.out.println();
+        System.out.println("----------------------Zadanie 8 ----------------------");
+        System.out.println();
+
+        int[] numbers2 = {1,2,3,4,5,6,7,8,-5,-1};
+        int su =0 ,  l= 1, min = numbers2[1], max = numbers2[1];
+        for (int i = 0; i < numbers2.length; i++){
+
+            System.out.print(numbers2[i]+", ");
+
+           su = su + numbers2[i];
+           l =  l * numbers2[i];
+
+           if (numbers2[i]<min){
+                min = numbers2[i];
+            }
+
+            if (numbers2[i]>max){
+                max = numbers2[i];
+            }
+
+
+            }
+
+
+        System.out.println();
+        System.out.println("suma: " + su);
+        System.out.println("iloczyn: " + l);
+        System.out.println("min: " + min);
+        System.out.println("max: " + max);
+        System.out.print("malejąco: " );
+
+        // sortowanie  malejąco
+        for (int j = 0; j < (numbers2.length); j++) {
+            for (int i = 0; i < (numbers2.length - 1); i++) {
+
+                if (numbers2[i] < numbers2[i+1]) {
+                    int tmp = numbers2[i];
+                    numbers2[i] = numbers2[i + 1];
+                    numbers2[i+1] = tmp;
+                    //System.out.print(numbers2[i] + ", ");
+                }
+
+            }
+
+        }
+// wyswietlenie tablicy malejąco
+        for (int i = 0; i < numbers2.length; i++){
+
+           System.out.print(numbers2[i]+", ");}
+
+// mediana
+
+        double med=0;
+
+        if (numbers2.length%2!=0){
+            med = numbers2[((numbers2.length+1)/2)-1];
+        }
+        else {
+            med = (numbers2[(numbers2.length/2)] + numbers2[(numbers2.length/2-1)])/2.0;
+
+           // med = su / ((double)numbers2.length);
+
+        }
+
+        System.out.println();
+        System.out.println("med= "+ med);
+
+
+
     }
 
 }
