@@ -171,8 +171,23 @@ public class petlafor {
         System.out.println();
         System.out.println("med= "+ med);
 
+        System.out.println();
+        System.out.println("----------------------Zadanie 9 ----------------------");
+        System.out.println();
 
+        char[]letters2 = {'j','u','r','e','k'};
 
+        for( int j = letters2.length-1; j > 0; j--) {
+            for (int i = 0; i < j; i++) {
+                char tmp = letters2[i];
+                letters2[i] = letters2[i + 1];
+                letters2[i + 1] = tmp;
+            }
+        }
+
+        for( int i = 0; i < letters2.length; i++){
+            System.out.print(letters2[i]);
+        }
     }
 
 }
