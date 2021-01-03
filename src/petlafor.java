@@ -85,9 +85,22 @@ public class petlafor {
            System.out.println();
            System.out.println("średnia: " + r);
           // System.out.println("suma: " + s);
-      }
+            }
         }
 
+        System.out.println();
+        System.out.println("----------------------Zadanie 7 ----------------------");
+        System.out.println();
+
+            char[]letters = {'w','z','A','a','t','a','a','A','w','a'};
+            int a=0, b=0;
+            for (int i=0; i<letters.length; i++){
+                if (letters[i]=='a'){
+                    a++;}
+                else if (letters[i]=='A'){
+                    b++;}
+            }
+        System.out.println("tablica zawiera "+a+" liter/y 'a' i "+ b+ " liter/y 'A'");
     }
 
 }
