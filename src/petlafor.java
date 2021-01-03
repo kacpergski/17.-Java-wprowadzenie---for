@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class petlafor {
 
     public static void main(String[] args) {
@@ -9,6 +11,20 @@ public class petlafor {
 
             System.out.print(i +", ");
         }
+
+        System.out.println("----------------------Zadanie 2 ----------------------");
+        System.out.println();
+
+
+        for( int i = 62349; i<=62392; i++){
+            if (i%2==0){
+                System.out.print(i +", ");
+            }
+        }
+
+
+
+
 
     }
 
