@@ -70,9 +70,23 @@ public class petlafor {
                 }
         System.out.println();
 
+        System.out.println();
+        System.out.println("----------------------Zadanie 6 ----------------------");
+        System.out.println();
 
-
-
+    int[] oceny = {3,2,3,5,1};
+        System.out.print("dla ocen: ");
+        double s=0;
+    for(int i=0; i < oceny.length; i++)  {
+                s = s+oceny[i];
+        double r  = s/5;
+        System.out.print(oceny[i] + ", ");
+       if  (i == (oceny.length-1)){
+           System.out.println();
+           System.out.println("średnia: " + r);
+          // System.out.println("suma: " + s);
+      }
+        }
 
     }
 
