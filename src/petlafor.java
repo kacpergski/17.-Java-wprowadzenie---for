@@ -21,8 +21,12 @@ public class petlafor {
                 System.out.print(i +", ");
             }
         }
+        System.out.println("----------------------Zadanie 3 ----------------------");
+        System.out.println();
 
-
+        for( int  i = 'a'; i<= 'z'; i++){
+            System.out.print( (char)i + ", ");
+        }
 
 
 
